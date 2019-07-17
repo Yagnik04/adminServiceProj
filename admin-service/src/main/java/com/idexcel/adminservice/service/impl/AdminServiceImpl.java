@@ -51,10 +51,12 @@ public class AdminServiceImpl implements AdminService {
 	}
 
 	@Override
-	public void saveAdmin(Admin admin) {
+	public String saveAdmin(Admin admin) {
 		// TODO Auto-generated method stub
 		
 		adminRepository.insert(admin);
+		
+		return admin.getId();
 	}
 
 	@Override

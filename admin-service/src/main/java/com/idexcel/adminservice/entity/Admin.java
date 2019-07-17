@@ -11,7 +11,7 @@ import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
-@Builder
+
 @Document(collection = "admins")
 public class Admin {
 	
@@ -104,16 +104,10 @@ public class Admin {
 		this.updatedDate = updatedDate;
 	}
 
-
 	@Override
 	public String toString() {
 		return "Admin [id=" + id + ", name=" + name + ", address=" + address + ", status=" + status + ", createdBy="
 				+ createdBy + ", updatedBy=" + updatedBy + ", createdDate=" + createdDate + ", updatedDate="
 				+ updatedDate + "]";
-	}
-	
-	
-	
-	
-	 
+	} 
 }

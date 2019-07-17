@@ -12,7 +12,7 @@ public interface AdminService {
 	
 	public void deleteById(String id);
 	
-	public void saveAdmin(Admin admin);
+	public String saveAdmin(Admin admin);
 	
 	public void updateAdmin(Admin admin);
 	

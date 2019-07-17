@@ -22,8 +22,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.idexcel.adminservice.dto.AdminDTO;
 import com.idexcel.adminservice.entity.Admin;
-import com.idexcel.adminservice.exception.AdminNotFoundException;
-import com.idexcel.adminservice.exception.IdConflictException;
+
+import com.idexcel.adminservice.exception.*;
 import com.idexcel.adminservice.service.AdminService;
 
 @RestController
@@ -36,6 +36,10 @@ public class AdminServiceRestController {
 	@Autowired
 	public AdminServiceRestController(AdminService adminService) {
 		this.adminService = adminService;
+	}
+	
+	public AdminServiceRestController() {
+	
 	}
 	
 	@GetMapping("/")
